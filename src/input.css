@@ -32,3 +32,10 @@ html {
   .hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
   }
+
+  .bg-cta {
+    background-image: url('./dist/img/cta.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }

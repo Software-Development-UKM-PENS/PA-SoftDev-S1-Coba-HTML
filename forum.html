@@ -15,7 +15,7 @@
 </head>
 
 <body class="overflow-hidden font-[Poppins]">
-    <section class="fixed bg-white w-full z-[99999] pb-5 lg:hidden">
+    <section class="fixed bg-white w-full z-40 pb-5 lg:hidden">
         <img src="/dist/img/logo_fix.svg" class=" w-40 mt-5 ml-5" alt="">
         <button id="hamburger" name="hamburger" type="button" class="scale-75 lg:hidden block absolute right-5 top-5">
             <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
@@ -111,13 +111,15 @@
                                             <div
                                                 class="border-gray-300 rounded-md border-2 w-6 h-6 justify-center inline-flex">
                                                 <i data-feather="plus"
-                                                    class="self-center w-4 h-4 text-base inline-flex"></i></div>
+                                                    class="self-center w-4 h-4 text-base inline-flex"></i>
+                                            </div>
                                             <p class="hidden lg:inline-flex text-gray-500">New Posts</p>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full border-primary border px-4 rounded-lg mt-4 py-4   hidden animated-element">
+                            <div
+                                class="w-full border-primary border px-4 rounded-lg mt-4 py-4   hidden animated-element">
                                 <input type="text" name=""
                                     class="w-full outline-none border-none focus:outline-none rounded-lg"
                                     placeholder="Tulis Judul Anda Disini...." id="">
@@ -134,16 +136,16 @@
             </div>
             </section>
             <section class=" pt-12 lg:pt-0 pb-20">
+                <div id="noResults" class="hidden text-center text-gray-300 font-semibold mt-2">Forum tidak ditemukan  :( </div>
                 <div
                     class="forum my-3 w-full block bg-white border border-gray-200 hover:border-primary transition ease-in-out rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <div class="px-4 inline-flex py-4">
-                        <img src="./dist/img/her.png" alt="Profile"
-                            class="rounded-full w-10 h-10 border border-primary">
-                        <h1 class="ms-3 font-medium text-sm align-middle self-center">Abimanyu Putra </h1>
-                        <p class="ml-3 text-xs text-gray-500 align-middle self-center">2m ago.</p>
+                    <div class="px-8 inline-flex py-4 w-full">
+                        <i data-feather="paperclip" class="w-5 h-5 text-primary mt-2.5"></i>
+                        <h1 class="ms-2 mt-1 lg:mt-2 font-medium text-lg align-middle self-center">Daily Posts #1</h1>
+                        <p class="ml-auto mt-3 text-xs text-gray-500 text-end justify-self-end">11.24 PM</p>
+                        <i data-feather="more-vertical" class="mt-3 ml-3 w-4 h-4 text-gray-500"></i>
                     </div>
-                    <hr class=" mx-4">
-                    <div class="px-4 inline-block lg:pb-5 pt-5">
+                    <div class="px-4 inline-block pt-3">
                         <h1 class="ms-3 font-semibold text-sm lg:text-xl mb-3">Tutorial Cara Ber-Meditasi Di Rumah
                         </h1>
                         <p class="text-sm line-clamp-4 px-3 text-gray-500">Lorem ipsum, dolor sit amet consectetur
@@ -151,71 +153,104 @@
                             quo! Minus!</p>
                     </div>
                     <br>
-                    <div class="px-4 inline-flex py-4  mt-2">
-                        <a href="" class="inline-flex text-xs mr-5 group text-gray-500 group-hover:text-primary te"><i data-feather="message-circle"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> 13 <span class="hidden lg:flex lg:ml-1">
-                                Comment</span></a>
-                        <a href="" class="inline-flex text-xs mr-5 group group-hover:text-primary"><i data-feather="send"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> Share</a>
-                        <button type="button" class="w-full"><i data-feather="more-horizontal"
-                                class=" self-center w-5 h-5"></i></button>
-                    </div>
-                </div>
-                <div
-                    class="forum  my-3w-full block bg-white border border-gray-200 hover:border-primary transition ease-in-out rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <div class="px-4 inline-flex py-4">
-                        <img src="./dist/img/her.png" alt="Profile"
-                            class="rounded-full w-10 h-10 border border-primary">
-                        <h1 class="ms-3 font-medium text-sm align-middle self-center">Abimanyu Putra </h1>
-                        <p class="ml-3 text-xs text-gray-500 align-middle self-center">2m ago.</p>
-                    </div>
-                    <hr class=" mx-4">
-                    <div class="px-4 inline-block lg:pb-5 pt-5">
-                        <h1 class="ms-3 font-semibold text-sm lg:text-xl mb-3">Tips & Trick Mendapatkan Teman Se-Frekuensi
-                        </h1>
-                        <p class="text-sm line-clamp-4 px-3 text-gray-500">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Vel beatae laborum eum ullam veritatis suscipit alias incidunt pariatur
-                            quo! Minus!</p>
-                    </div>
-                    <br>
-                    <div class="px-4 inline-flex py-4  mt-2">
-                        <a href="" class="inline-flex text-xs mr-5 group text-gray-500 group-hover:text-primary te"><i data-feather="message-circle"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> 13 <span class="hidden lg:flex lg:ml-1">
-                                Comment</span></a>
-                        <a href="" class="inline-flex text-xs mr-5 group group-hover:text-primary"><i data-feather="send"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> Share</a>
-                        <button type="button" class="w-full"><i data-feather="more-horizontal"
-                                class=" self-center w-5 h-5"></i></button>
+                    <div class="px-8 inline-flex py-4 mt-2 justify-between items-center w-full">
+                        <div class="inline-flex self-start">
+                            <img src="./dist/img/her.png" alt="Profile"
+                                class="rounded-full w-10 h-10 border border-primary">
+                            <h1 class="ms-3 font-medium text-sm align-middle self-center">Abimanyu Putra</h1>
+                        </div>
+                        <div class="inline-flex">
+                            <a href="" class="w-full px-3 inline-flex"><i data-feather="tag"
+                                    class="self-center lg:w-5 lg:h-5 w-4 h-4 text-gray-500 hover:text-primary"></i><span
+                                    class="hidden lg:flex text-gray-500 ml-3">Discussion, Tips</span></a>
+                            <a href="" class="inline-flex text-xs px-3  group text-gray-500 group-hover:text-primary">
+                                <i data-feather="message-circle"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex group-hover:text-primary"></i>
+
+                            </a>
+                            <a href="" class="inline-flex text-xs px-3  group group-hover:text-primary">
+                                <i data-feather="send"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex text-gray-500 group-hover:text-primary"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div
                     class="forum my-3 w-full block bg-white border border-gray-200 hover:border-primary transition ease-in-out rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <div class="px-4 inline-flex py-4">
-                        <img src="./dist/img/her.png" alt="Profile"
-                            class="rounded-full w-10 h-10 border border-primary">
-                        <h1 class="ms-3 font-medium text-sm align-middle self-center">Abimanyu Putra </h1>
-                        <p class="ml-3 text-xs text-gray-500 align-middle self-center">2m ago.</p>
+                    <div class="px-8 inline-flex py-4 w-full">
+                        <i data-feather="paperclip" class="w-5 h-5 text-primary mt-2.5"></i>
+                        <h1 class="ms-2 mt-1 lg:mt-2 font-medium text-lg align-middle self-center">Daily Posts #2</h1>
+                        <p class="ml-auto mt-3 text-xs text-gray-500 text-end justify-self-end">11.24 PM</p>
+                        <i data-feather="more-vertical" class="mt-3 ml-3 w-4 h-4 text-gray-500"></i>
                     </div>
-                    <hr class=" mx-4">
-                    <div class="px-4 inline-block lg:pb-5 pt-5">
-                        <h1 class="ms-3 font-semibold text-sm lg:text-xl mb-3">Brain Detox
+                    <div class="px-4 inline-block pt-3">
+                        <h1 class="ms-3 font-semibold text-sm lg:text-xl mb-3">Mencari Teman Se-Frekuensi
                         </h1>
                         <p class="text-sm line-clamp-4 px-3 text-gray-500">Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Vel beatae laborum eum ullam veritatis suscipit alias incidunt pariatur
                             quo! Minus!</p>
                     </div>
                     <br>
-                    <div class="px-4 inline-flex py-4  mt-2">
-                        <a href="" class="inline-flex text-xs mr-5 group text-gray-500 group-hover:text-primary te"><i data-feather="message-circle"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> 13 <span class="hidden lg:flex lg:ml-1">
-                                Comment</span></a>
-                        <a href="" class="inline-flex text-xs mr-5 group group-hover:text-primary"><i data-feather="send"
-                                class="w-4 h-4 inline-flex mr-2 group-hover:text-primary"></i> Share</a>
-                        <button type="button" class="w-full"><i data-feather="more-horizontal"
-                                class=" self-center w-5 h-5"></i></button>
+                    <div class="px-8 inline-flex py-4 mt-2 justify-between items-center w-full">
+                        <div class="inline-flex self-start">
+                            <img src="./dist/img/her.png" alt="Profile"
+                                class="rounded-full w-10 h-10 border border-primary">
+                            <h1 class="ms-3 font-medium text-sm align-middle self-center">Rassya</h1>
+                        </div>
+                        <div class="inline-flex">
+                            <a href="" class="w-full px-3 inline-flex"><i data-feather="tag"
+                                    class="self-center lg:w-5 lg:h-5 w-4 h-4 text-gray-500 hover:text-primary"></i><span
+                                    class="hidden lg:flex text-gray-500 ml-3">Discussion, Tips</span></a>
+                            <a href="" class="inline-flex text-xs px-3  group text-gray-500 group-hover:text-primary">
+                                <i data-feather="message-circle"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex group-hover:text-primary"></i>
+
+                            </a>
+                            <a href="" class="inline-flex text-xs px-3  group group-hover:text-primary">
+                                <i data-feather="send"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex text-gray-500 group-hover:text-primary"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div
+                    class="forum my-3 w-full block bg-white border border-gray-200 hover:border-primary transition ease-in-out rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <div class="px-8 inline-flex py-4 w-full">
+                        <i data-feather="paperclip" class="w-5 h-5 text-primary mt-2.5"></i>
+                        <h1 class="ms-2 mt-1 lg:mt-2 font-medium text-lg align-middle self-center">Daily Posts #1</h1>
+                        <p class="ml-auto mt-3 text-xs text-gray-500 text-end justify-self-end">11.24 PM</p>
+                        <i data-feather="more-vertical" class="mt-3 ml-3 w-4 h-4 text-gray-500"></i>
+                    </div>
+                    <div class="px-4 inline-block pt-3">
+                        <h1 class="ms-3 font-semibold text-sm lg:text-xl mb-3">Tips & Trick Cara Mengendalikan Emosi
+                        </h1>
+                        <p class="text-sm line-clamp-4 px-3 text-gray-500">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Vel beatae laborum eum ullam veritatis suscipit alias incidunt pariatur
+                            quo! Minus!</p>
+                    </div>
+                    <br>
+                    <div class="px-8 inline-flex py-4 mt-2 justify-between items-center w-full">
+                        <div class="inline-flex self-start">
+                            <img src="./dist/img/her.png" alt="Profile"
+                                class="rounded-full w-10 h-10 border border-primary">
+                            <h1 class="ms-3 font-medium text-sm align-middle self-center">Abimanyu Putra</h1>
+                        </div>
+                        <div class="inline-flex">
+                            <a href="" class="w-full px-3 inline-flex"><i data-feather="tag"
+                                    class="self-center lg:w-5 lg:h-5 w-4 h-4 text-gray-500 hover:text-primary"></i><span
+                                    class="hidden lg:flex text-gray-500 ml-3">Discussion, Tips</span></a>
+                            <a href="" class="inline-flex text-xs px-3  group text-gray-500 group-hover:text-primary">
+                                <i data-feather="message-circle"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex group-hover:text-primary"></i>
 
+                            </a>
+                            <a href="" class="inline-flex text-xs px-3  group group-hover:text-primary">
+                                <i data-feather="send"
+                                    class="lg:w-5 lg:h-5 w-4 h-4 inline-flex text-gray-500 group-hover:text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
@@ -230,26 +265,24 @@
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
-         document.addEventListener("DOMContentLoaded", function () {
-        var animatedElement = document.querySelector(".animated-element");
-        var showButton = document.getElementById("showButton");
+        document.addEventListener("DOMContentLoaded", function () {
+            var animatedElement = document.querySelector(".animated-element");
+            var showButton = document.getElementById("showButton");
 
-        // Tangani klik tombol
-        showButton.addEventListener("click", function () {
-            if (animatedElement.classList.contains("hidden")) {
-                // Jika elemen disembunyikan, tampilkan
-                animatedElement.classList.remove("hidden");
-                animatedElement.classList.add("block");
-            } else {
-                // Jika elemen ditampilkan, sembunyikan
-                animatedElement.classList.remove("block");
-                animatedElement.classList.add("hidden");
-            }
+            showButton.addEventListener("click", function () {
+                if (animatedElement.classList.contains("hidden")) {
+                    animatedElement.classList.remove("hidden");
+                    animatedElement.classList.add("block");
+                } else {
+                    animatedElement.classList.remove("block");
+                    animatedElement.classList.add("hidden");
+                }
+            });
         });
-    });
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.getElementById("searchInput");
             const forums = document.querySelectorAll(".forum");
+            const noResults = document.getElementById("noResults");
             let debounceTimeout;
 
             searchInput.addEventListener("input", function () {
@@ -257,16 +290,24 @@
 
                 debounceTimeout = setTimeout(function () {
                     const searchTerm = searchInput.value.toLowerCase();
+                    let resultsFound = false;
 
                     forums.forEach((forum) => {
                         const forumTitle = forum.querySelector(".font-semibold").textContent.toLowerCase();
                         if (forumTitle.includes(searchTerm)) {
                             forum.style.display = "block";
+                            resultsFound = true;
                         } else {
                             forum.style.display = "none";
                         }
                     });
-                }, 300); // Ubah angka 300 ke waktu penundaan yang Anda inginkan (dalam milidetik).
+
+                    if (!resultsFound) {
+                        noResults.style.display = "block";
+                    } else {
+                        noResults.style.display = "none";
+                    }
+                }, 300);
             });
         });
     </script>
