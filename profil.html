@@ -14,66 +14,72 @@
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 </head>
 
-<body class="overflow-hidden font-[Poppins]">
-  <div class="nav-sidebar">
-    <img src="/dist/img/logo_fix.svg" class=" w-40 fixed top-5 left-5" alt="">
-    <button id="hamburger" name="hamburger" type="button" class="scale-75 fixed lg:hidden block  right-4 top-5">
+<body class=" font-[Poppins]">
+  <section class="fixed bg-white w-full pb-5">
+    <img src="/dist/img/logo_fix.svg" class=" w-40 mt-5 ml-5" alt="">
+    <button id="hamburger" name="hamburger" type="button" class="scale-75 lg:hidden block absolute right-5 top-5">
       <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
       <span class="hamburger-line transition duration-300 ease-in-out"></span>
       <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
     </button>
-  </div>
-  <div class="flex flex-no-wrap h-full">
+  </section>
+  <div class="flex flex-no-wrap h-full bg-white z-[99999]">
     <aside style="min-height: 716px" id="sidebar"
-      class="w-64 fixed hidden bg-white shadow h-full flex-col justify-between sm:flex z-40">
-      <div class="px-8 ">
+    class="w-64 fixed hidden bg-white shadow h-full flex-col justify-between sm:flex z-40">
+    <div class="px-8 ">
         <div class="h-16 w-full flex items-center mt-9">
-          <img src="./dist/img/logo_fix.svg" class="w-[156px]" alt="Logo">
+            <img src="./dist/img/logo_fix.svg" class="w-[156px]" alt="Logo">
         </div>
         <ul class="mt-14">
-          <p class="font-semibold mb-5 uppercase tracking-widest text-xs text-gray-400">Features</p>
-          <li
-            class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
-            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-              <i data-feather="user" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
-              <span class="text-sm ml-2">AI</span>
-            </a>
-          </li>
-          <li
-            class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
-            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-              <i data-feather="message-circle" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
-              <span class="text-sm ml-2">Forums</span>
-            </a>
-          </li>
-          <li
-            class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
-            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-              <i data-feather="bar-chart" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
-              <span class="text-sm ml-2">Profile</span>
-            </a>
-          </li>
-          <p class="font-semibold mb-5 mt-7 uppercase tracking-widest text-xs text-gray-400">HELP</p>
-          <li
-            class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
-            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-              <i data-feather="settings" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
-              <span class="text-sm ml-2">Settings</span>
-            </a>
-          </li>
-          <li
-            class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
-            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-              <i data-feather="log-out" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
-              <span class="text-sm ml-2">Log out</span>
-            </a>
-          </li>
+            <p class="font-semibold mb-5 uppercase tracking-widest text-xs text-gray-400">Features</p>
+            <li
+                class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                <a href="./curhat.html" target="_blank"
+                    class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <i data-feather="user" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                    <span class="text-sm ml-2">AI</span>
+                </a>
+            </li>
+            <li
+                class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                <a href="./forum.html" target="_blank"
+                    class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <i data-feather="message-circle"
+                        class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                    <span class="text-sm ml-2">Forums</span>
+                </a>
+            </li>
+            <li
+                class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                <a href="./profil.html" target="_blank"
+                    class="flex items-center focus:outline-none focus:ring-2 focus:ring-white w-full">
+                    <i data-feather="bar-chart" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                    <span class="text-sm ml-2">Profile</span>
+                </a>
+            </li>
+            <p class="font-semibold mb-5 mt-7 uppercase tracking-widest text-xs text-gray-400">HELP</p>
+            <li
+                class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                <a href="javascript:void(0)"
+                    class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <i data-feather="settings" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                    <span class="text-sm ml-2">Settings</span>
+                </a>
+            </li>
+            <li
+                class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                <a href="./index.html" target="_blank"
+                    class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <i data-feather="log-out" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                    <span class="text-sm ml-2">Log out</span>
+                </a>
+            </li>
         </ul>
-      </div>
-    </aside>
+    </div>
+</aside>
     <div class="container justify-center mx-auto py-0 lg:ml-72  px-6 overflow-x-hidden">
       <div class="w-full self-center justify-center rounded overflow-x-hidden">
-        <section class="lg:pt-24 pt-32 pb-24">
+        <section class="lg:pt-24 pt-32 pb-24 ">
           <div class="container mx-auto">
             <div class="flex flex-wrap">
               <div class="w-full self-center px-4">
@@ -123,26 +129,16 @@
                     </div>
                   </div>
                 </div>
-                <h1 class="font-semibold lg:text-xl mt-12 lg:mt-24 text-center lg:text-start">Statistik Perkembangan
+                <h1 class="font-semibold lg:text-xl mt-12 lg:mt-20 text-center  lg:text-start">Statistik Perkembangan
                   Emosi Anda</h1>
-                <div class="w-full self-center border-primary border-2 rounded-lg mt-7 py-5 px-4">
-                  <div class="max-w-sm w-full bg-white p-4 md:p-6">
+                <div class="w-full self-center border-primary border-2 rounded-lg mt-7 py-5 ">
+                  <div class="max-w-sm w-full bg-white ">
                     <div class="flex justify-between">
-                      <div>
-                        <h5 class="leading-none text-xl font-semibold   pb-2">Stress Anda Turun</h5>
-                      </div>
-                      <div
-                        class="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500  text-center">
-                        12%
-                        <svg class="w-3 h-3 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                          viewBox="0 0 10 14">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 13V1m0 0L1 5m4-4 4 4" />
-                        </svg>
+                      <div class="px-4 flex absolute ">
+                        <h5 class="leading-none text-xl font-semibold  pb-2">Stress Anda Turun</h5>
                       </div>
                     </div>
-                    <div id="area-chart" class="w-full "></div>
-                    </div>
+                    <div id="area-chart" class="w-full px-0 mt-9 "></div>
                   </div>
                 </div>
               </div>
@@ -164,9 +160,11 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script>
     // ApexCharts options and config
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       let options = {
         chart: {
+          width: '400%',
+          height: '100%',
           type: "area",
           fontFamily: "Inter, sans-serif",
           dropShadow: {
@@ -198,7 +196,7 @@
           width: 6,
         },
         grid: {
-          show: false,
+          show: true,
           strokeDashArray: 4,
           padding: {
             left: 2,
@@ -229,10 +227,22 @@
           show: false,
         },
       }
-  
+
       if (document.getElementById("area-chart") && typeof ApexCharts !== 'undefined') {
         const chart = new ApexCharts(document.getElementById("area-chart"), options);
         chart.render();
+
+        // Mendeteksi ukuran layar saat halaman dimuat
+        const screenWidth = window.innerWidth;
+
+        // Ubah lebar grafik sesuai dengan ukuran layar
+        if (screenWidth <= 600) {
+          chart.updateOptions({
+            chart: {
+              width: "100%"
+            }
+          });
+        }
       }
     });
   </script>

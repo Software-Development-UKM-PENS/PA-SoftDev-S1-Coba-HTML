@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoulStory</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+</head>
+
+<body class="overflow-hidden font-[Poppins]">
+    <section class="fixed bg-white w-full z-[99999] pb-5 lg:hidden">
+        <img src="/dist/img/logo_fix.svg" class=" w-40 mt-5 ml-5" alt="">
+        <button id="hamburger" name="hamburger" type="button" class="scale-75 lg:hidden block absolute right-5 top-5">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+        </button>
+    </section>
+    <div class="flex flex-no-wrap h-full">
+        <aside style="min-height: 716px" id="sidebar"
+            class="w-64 fixed hidden bg-white shadow h-full flex-col justify-between sm:flex z-40">
+            <div class="px-8 ">
+                <div class="h-16 w-full flex items-center mt-9">
+                    <img src="./dist/img/logo_fix.svg" class="w-[156px]" alt="Logo">
+                </div>
+                <ul class="mt-14">
+                    <p class="font-semibold mb-5 uppercase tracking-widest text-xs text-gray-400">Features</p>
+                    <li
+                        class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                        <a href="javascript:void(0)"
+                            class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <i data-feather="user" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                            <span class="text-sm ml-2">AI</span>
+                        </a>
+                    </li>
+                    <li
+                        class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                        <a href="javascript:void(0)"
+                            class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <i data-feather="message-circle"
+                                class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                            <span class="text-sm ml-2">Forums</span>
+                        </a>
+                    </li>
+                    <li
+                        class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                        <a href="javascript:void(0)"
+                            class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <i data-feather="bar-chart" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                            <span class="text-sm ml-2">Profile</span>
+                        </a>
+                    </li>
+                    <p class="font-semibold mb-5 mt-7 uppercase tracking-widest text-xs text-gray-400">HELP</p>
+                    <li
+                        class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                        <a href="javascript:void(0)"
+                            class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <i data-feather="settings" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                            <span class="text-sm ml-2">Settings</span>
+                        </a>
+                    </li>
+                    <li
+                        class="group flex w-full justify-between text-black hover:text-white cursor-pointer items-center mb-3 hover:bg-primary px-7 py-3 pl-3 rounded-lg transition ease-in-out">
+                        <a href="javascript:void(0)"
+                            class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <i data-feather="log-out" class="mr-1 w-4 h-4 text-primary group-hover:text-white"></i>
+                            <span class="text-sm ml-2">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="container justify-center mx-auto py-0 lg:ml-64  px-6 overflow-x-hidden">
+            <div class="w-full self-center justify-center rounded overflow-x-hidden">
+                <section class=" pt-32 lg:pt-20 pb-2 lg:pb-7">
+                    <div class="container mx-auto">
+                        <div class="flex flex-wrap p-4 lg:flex-none forum w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                            <div class="w-full self-center px-4">
+                                <div class="lg:inline-flex block self-center">
+                                    <div class="justify-center flex mb-5">
+                                        <img src="./dist/img/her.png"
+                                            class="lg:w-20 lg:h-20 w-24 h-24 border-2 border-primary rounded-full self-center"
+                                            alt="">
+                                    </div>
+                                    <div class="block lg:ml-7 lg:mb-3 self-center">
+                                        <div class="flex flex-wrap">
+                                            <h1
+                                            class="text-3xl self-center justify-center font-medium text-center lg:text-start mx-auto">
+                                            Era Syifa.
+                                        </h1>
+                                        </div>
+                                        <p class="text-center text-sm lg:text-start text-gray-500 self-center">2m ago.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap px-4 mt-8 lg:mt-4">
+                                <h1 class="font-medium lg:text-start text-lg lg:text-3xl text-center">Tips & Trick mencari teman se-frekuensi!</h1>
+                                <p class="mt-5 text-xs lg:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, numquam sed dolor magnam, tempore hic facere fugit nam blanditiis, iure tempora quae sunt sit reiciendis ad sapiente id quidem perspiciatis ipsum. Voluptates, eum quo. Nostrum atque facilis quam nihil odit alias maxime consectetur est esse, asperiores illo quasi excepturi veritatis nesciunt accusantium tempore incidunt ullam enim. Alias culpa laborum deleniti repellat quam explicabo dolorum impedit deserunt, nulla consequatur id unde iusto. Suscipit molestias hic adipisci ea tempora voluptates placeat optio eveniet aliquam! Tenetur repellendus perferendis perspiciatis nam aliquid eveniet. Minus tenetur sed sapiente eum, distinctio voluptatibus sunt saepe itaque quasi?</p>
+                            </div>
+
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-wrap px-4 mt-8 border-b border-gray-500">
+                                <h1 class="text-lg font-medium border-b border-gray-500">Comment</h1>
+                            </div>
+                        </div>
+                        <!-- Section Komentar -->
+                        <div class="forum w-full bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                            <!-- Komentar -->
+                            <div class="flex flex-wrap p-4">
+                                <img src="./dist/img/her.png" class="w-10 h-10 rounded-full border border-primary" alt="profil">
+                                <div class="flex flex-wrap">
+                                    <h1 class="text-sm font-medium self-center ms-3">Guest #1177</h1>
+                                    <p class="text-xs text-gray-500 self-center ms-3">2m ago.</p>
+                                </div>
+                                <p class="text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci officia voluptas, vel voluptatem dignissimos debitis impedit temporibus. Et, esse?</p>
+                            </div>
+                            <hr>
+                            <!-- Komentar end -->
+
+                            
+                            <div class="flex flex-wrap p-4">
+                                <img src="./dist/img/her.png" class="w-10 h-10 rounded-full border border-primary" alt="profil">
+                                <div class="flex flex-wrap">
+                                    <h1 class="text-sm font-medium self-center ms-3">Guest #1147</h1>
+                                    <p class="text-xs text-gray-500 self-center ms-3">2m ago.</p>
+                                </div>
+                                <p class="text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci officia voluptas, vel voluptatem dignissimos debitis impedit temporibus. Et, esse?</p>
+                            </div>
+                            <hr>
+                            <!-- Komentar end -->
+
+                            
+                            <div class="flex flex-wrap p-4">
+                                <img src="./dist/img/her.png" class="w-10 h-10 rounded-full border border-primary" alt="profil">
+                                <div class="flex flex-wrap">
+                                    <h1 class="text-sm font-medium self-center ms-3">Guest #17</h1>
+                                    <p class="text-xs text-gray-500 self-center ms-3">2m ago.</p>
+                                </div>
+                                <p class="text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci officia voluptas, vel voluptatem dignissimos debitis impedit temporibus. Et, esse?</p>
+                            </div>
+                            <hr>
+                            <!-- Komentar end -->
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="./dist/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerButton = document.getElementById("hamburger");
+            const sidebar = document.getElementById("sidebar");
+
+            hamburgerButton.addEventListener("click", function () {
+                if (sidebar.style.display === "none" || sidebar.style.display === "") {
+                    sidebar.style.display = "block";
+                } else {
+                    sidebar.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

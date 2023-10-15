@@ -32,9 +32,3 @@ html {
   .hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
   }
-
-  .nav-sidebar {
-    @apply bg-black z-[9999] bg-opacity-50;
-    backdrop-filter: blur(5px);
-
-  }
