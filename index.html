@@ -16,7 +16,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <!-- nav -->
+  
   <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
     <div class="container mx-auto">
       <div class="flex items-center justify-between relative py-3 px-4">
@@ -35,20 +35,20 @@
             class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full lg:right-1/2 lg:top-1/2 right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
             <ul class="block lg:flex justify-center">
               <li class="group lg:text-center">
-                <a href="./index.html"
+                <a href="#home"
                   class="text-black py-2 px-8 group-hover:text-primary font-semibold flex transition ease-in-out">Home</a>
               </li>
               <li class="group lg:text-center">
-                <a href="./kategori.html"
+                <a href="#about"
                   class="text-black py-2 px-8 group-hover:text-primary font-semibold flex transition ease-in-out">About
                   Us</a>
               </li>
               <li class="group lg:text-center">
-                <a href="./favorite.html"
+                <a href="#feature"
                   class="text-black py-2 px-8 group-hover:text-primary font-semibold flex transition ease-in-out">Features</a>
               </li>
               <li class="group lg:text-center">
-                <a href="./favorite.html"
+                <a href="#testimonials"
                   class="text-black py-2 px-8 group-hover:text-primary font-semibold flex transition ease-in-out">Testimonials</a>
               </li>
             </ul>
@@ -62,8 +62,8 @@
       </div>
     </div>
   </header>
-  <!-- hero -->
-  <section class="lg:pt-40 pt-24 pb-12 bg-white">
+
+  <section id="home" class="lg:pt-40 pt-24 pb-12 bg-white">
     <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="inline-flex justify-center self-center w-full px-4 mx-auto mb-6">
@@ -142,11 +142,11 @@
           <div class="w-72 lg:w-[1049px] lg:h-full h-80 self-center"><img src="./dist/img/hero-img-1.png"
               class="lg:h-full w-full lg:object-none object-cover rounded-t-lg  h-80" alt=""></div>
         </div>
-        <div class="grid lg:grid-cols-3 lg:mt-24 mx-4">
+        <div class="grid lg:grid-cols-3 lg:mt-12 mx-4">
           <div class="grid grid-cols-1 lg:mx-0 mx-10 mt-10">
             <div class="inline-flex mx-auto gap-4">
-              <i data-feather="smile" class="text-primary w-6 h-6"></i>
-              <h1 class="font-semibold text-xl">Stress Meter</h1>
+              <i data-feather="smile" class="text-primary w-6 h-6 lg:w-10 lg:h-10"></i>
+              <h1 class="font-semibold text-xl lg:text-3xl">Stress Meter</h1>
             </div>
             <p class="text-center flex-wrap mt-8 lg:mx-24 md:mx-10 text-gray-400">
               Measure how stressed you are using AI sophistication
@@ -154,8 +154,8 @@
           </div>
           <div class="grid grid-cols-1 lg:mx-0 mx-10 mt-10">
             <div class="inline-flex mx-auto gap-4">
-              <i data-feather="bar-chart" class="text-primary w-6 h-6"></i>
-              <h1 class="font-semibold text-xl">Emotion Statistic</h1>
+              <i data-feather="bar-chart" class="text-primary w-6 h-6 lg:w-10 lg:h-10"></i>
+              <h1 class="font-semibold text-xl lg:text-3xl">Emotion Statistic</h1>
             </div>
             <p class="text-center flex-wrap mt-8 lg:mx-24 md:mx-10 text-gray-400">
               Monitor the progress of your emotions with statistics.
@@ -163,8 +163,8 @@
           </div>
           <div class="grid grid-cols- lg:mx-0 mx-10 mt-10">
             <div class="inline-flex mx-auto gap-4">
-              <i data-feather="message-square" class="text-primary w-6 h-6"></i>
-              <h1 class="font-semibold text-xl">Forum & Groups</h1>
+              <i data-feather="message-square" class="text-primary w-6 h-6 lg:w-10 lg:h-10"></i>
+              <h1 class="font-semibold text-xl lg:text-3xl">Forum & Groups</h1>
             </div>
             <p class="text-center flex-wrap mt-8 lg:mx-24 md:mx-10 text-gray-400">
               Gather and communicate with forum features.
@@ -175,97 +175,85 @@
     </div>
   </section>
 
-  <!-- Sign in or About us section -->
-  <section id="aboutAndFunction" class="pt-32">
-    <div class="container mx-auto">
-      <div class="grid px-4">
-        <div class="grid lg:grid-cols-2 grid-cols-1">
-          <div class="lg:grid-cols-2 grid-cols-1 px-4 mb-7">
-            <!-- SVG here -->
-            <img src="./dist/img/hero-img-2.svg" alt="">
-          </div>
-          <!-- Text here -->
-          <div class="lg:grid-cols-2 grid-cols-1 my-auto mx-auto lg:ps-52 px-4">
-            <div class="col-span-2 lg:col-span-1">
-              <h1 class="lg:text-start text-center text-2xl lg:text-4xl font-semibold mb-8">
-                Tell your story to
-                <span class="text-primary font-bold"><br />
-                  personal AI Assistant.</span>
-              </h1>
-            </div>
-
-            <div class="col-span-2 lg:col-span-1 mb-8">
-              <p class="text-center lg:text-start lg:me-[5rem]">
-                Share your problems and communicate without others knowing. Our AI will provide solutions and detect
-                your emotions.
-              </p>
-            </div>
-
-            <div class="col-span-1">
-              <ul class="list-disc ms-8 lg:me-[5rem] list">
-                <li>
-                  <p class="text-gray-400 leading-relaxed">
-                    <span class="text-secondary font-semibold">Gain experience </span>talking with personal AI and
-                    people about your feelings
-                    and your problems.
-                  </p>
-                </li>
-                <li class="mt-4">
-                  <p class="text-gray-400 leading-relaxed">
-                    <span class="text-secondary font-semibold">Get the best solutions</span>
-                    from both personal AI and people, and work together
-                    towards a common goal.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <section id="about" class="lg:pt-24">
+    <div
+      class="mx-auto max-w-screen-xl px-12 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
+    >
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div
+          class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+        >
+          <img src="./dist/img/hero-img-2.svg"/>
         </div>
-        <!-- Fungsi kedua -->
-        <div class="grid lg:grid-cols-2 grid-cols-1">
-          <div class="lg:grid-cols-2 grid-cols-1 lg:order-last px-4 py-7 lg:ml-24">
-            <img src="./dist/img/hero-img-3.png" class="" alt="">
-          </div>
-          <div class="lg:grid-cols-2 grid-cols-1 my-auto lg:ps-36 lg:pe-36 px-4">
-            <!-- Text here -->
-            <div class="col-span-2 lg:col-span-1">
-              <h1 class="lg:text-start text-center text-2xl lg:text-4xl font-semibold mb-8">
-                Track your emotion <span><br /></span>with
-                <span class="text-primary font-bold">personal Stats.</span>
-              </h1>
-            </div>
-
-            <div class="col-span-2 lg:col-span-1 mb-8">
-              <p class="lg:text-start text-center">
-                Register your account and get our feature more complex and
-                more comfortable to use
+  
+        <div class="lg:py-24">
+          <h2 class="lg:text-4xl text-2xl font-medium lg:text-start text-center">Tell your story to <br> <span class="text-primary font-semibold">personal AI Assistant.</span>
+            </h2>
+  
+          <p class="mt-8 text-gray-500 lg:pr-28 text-justify">
+            Share your problems and communicate without others knowing. Our AI will provide solutions and detect your emotions.
+          </p>
+          <ul class="mt-8 list-disc ms-8 lg:me-[5rem] list">
+            <li>
+              <p class="text-gray-400 leading-relaxed">
+                <span class="text-secondary font-semibold">Gain experience </span>talking with personal AI and
+                people about your feelings
+                and your problems.
               </p>
-            </div>
-
-            <div class="col-span-2 lg:col-span-1">
-              <ul class="list-disc ms-8 lg:ms-4 ">
-                <li>
-                  <p class="text-gray-400 leading-relaxed">
-                    <span class="text-secondary font-semibold">Track your emotion progress </span>with our statistics
-                    feature. get better everytime.
-                  </p>
-                </li>
-                <li class="mt-4">
-                  <p class="text-gray-400 leading-relaxed">
-                    <span class="text-secondary font-semibold">Know what your emotion</span>
-                    from the way you tell us a story. Our system will detect how stressed you are with the stress meter
-                    feature
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="mt-4">
+              <p class="text-gray-400 leading-relaxed">
+                <span class="text-secondary font-semibold">Get the best solutions</span>
+                from both personal AI and people, and work together
+                towards a common goal.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="pt-40 pb-12 bg-white">
+  <section id="feature" class="">
+    <div
+      class="mx-auto max-w-screen-xl px-12 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
+    >
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div
+          class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-first lg:h-full"
+        >
+          <img src="./dist/img/hero-img-3.png"/>
+        </div>
+  
+        <div class="lg:py-24">
+          <h2 class="lg:text-4xl text-2xl font-medium lg:text-start text-center">Track your emotion
+            with <span class="text-primary font-semibold">personal Stats.</span> 
+            </h2>
+  
+          <p class="mt-8 text-gray-500 lg:pr-28 text-justify">
+            Share your problems and communicate without others knowing. Our AI will provide solutions and detect your emotions.
+          </p>
+          <ul class="mt-8 list-disc ms-8 lg:ms-4 ">
+            <li>
+              <p class="text-gray-400 leading-relaxed">
+                <span class="text-secondary font-semibold">Track your emotion progress </span>with our statistics
+                feature. get better everytime.
+              </p>
+            </li>
+            <li class="mt-4">
+              <p class="text-gray-400 leading-relaxed">
+                <span class="text-secondary font-semibold">Know what your emotion</span>
+                from the way you tell us a story. Our system will detect how stressed you are with the stress meter
+                feature
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="lg:pt-40 pt-24 pb-12 bg-white">
     <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="self-center mx-auto px-4 w-full">
@@ -437,7 +425,7 @@
     </div>
   </section>
 
-  <section class="px-12 pt-24">
+  <section  class="px-12 pt-24">
     <div style="background-image: url('./dist/img/cta.png')" class=" bg-cover bg-top bg-no-repeat rounded-top-xl p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="text-center ltr:sm:text-left rtl:sm:text-right">
         <h2 class="text-2xl font-thin text-white sm:text-3xl md:text-5xl">
@@ -462,8 +450,7 @@
           </div>
 
           <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque.
+            Share your problems and communicate without others knowing. Our AI will provide solutions and detect your emotions.
           </p>
 
           <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -566,7 +553,7 @@
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
 
-                  <span class="flex-1 text-gray-700">john@doe.com</span>
+                  <span class="flex-1 text-gray-700">abikajanuar@gmail.com</span>
                 </a>
               </li>
 
@@ -578,7 +565,7 @@
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
 
-                  <span class="flex-1 text-gray-700">0123456789</span>
+                  <span class="flex-1 text-gray-700">08123456789</span>
                 </a>
               </li>
 
@@ -591,7 +578,7 @@
                 </svg>
 
                 <address class="-mt-0.5 flex-1 not-italic text-gray-700">
-                  213 Lane, London, United Kingdom
+                  Ngampelsari, Candi
                 </address>
               </li>
             </ul>
@@ -616,7 +603,7 @@
           </p>
 
           <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-            &copy; 2022 Company Name
+            &copy; 2023 Aint No Way Team
           </p>
         </div>
       </div>
