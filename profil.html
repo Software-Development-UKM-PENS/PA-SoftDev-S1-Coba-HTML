@@ -23,7 +23,7 @@
       <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
     </button>
   </section>
-  <div class="flex flex-no-wrap h-full bg-white z-[99999]">
+  <div class="flex flex-no-wrap h-screen h-full bg-white z-[99999]">
     <aside style="min-height: 716px" id="sidebar"
     class="w-64 fixed hidden bg-white shadow h-full sm:flex flex-col justify-between z-40">
       <div class="px-8 flex flex-col h-full justify-between">
@@ -86,7 +86,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block">
+              <div class="block mt-5">
                 <div class="lg:flex w-full">
                   <div
                     class="w-full lg:h-full lg:w-2/6 mr-5 self-center mt-5 bg-white py-5 border-primary border-2 rounded-lg">
@@ -98,24 +98,57 @@
                   </div>
                   <div class="block w-full">
                     <div class="w-full self-center mt-5 bg-white py-5 px-4 border-primary border-2 rounded-lg">
-                      <h1 class="text-center text-xl lg:text-start"><span class="font-bold text-primary">Stress
-                          Meter</span> Anda Terakhir Kali :</h1>
+                      <h1 class="text-center text-xl lg:text-start"><span class="font-bold text-primary">Aktivitas</span> Anda Terakhir Kali :</h1>
 
-                      <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div
-                          class="mt-5 bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                          style="width: 80%">80% Sedih</div>
-                      </div>
+                      <div class="w-full text-black text-base p-4">
+                        <!-- Grid layout: 5 columns, 2 rows -->
+                        <div class="flex grid-cols-5 gap-4 justify-between">
+                            <!-- First Row -->
+                            <lu class="col-span-2">
+                              <li>Belajar</li>
+                              <li>Makan</li>
+                            </lu>
+                            
+                            <lu class="col-span-2">
+                              <li>Hiburan</li>
+                              <li>Memasak</li>
+                            </lu>
+
+                            <lu class="col-span-2">
+                              <li>Bekerja</li>
+                              <li>Berbelanja</li>
+                            </lu>
+
+                            <!-- Second Row -->
+                            <lu class="col-span-2">
+                              <li>Sports</li>
+                              <li>Sleep</li>
+                            </lu>
+
+                            <!-- Second Row -->
+                            <lu class="col-span-2">
+                              <li>Social</li>
+                              <li>Pray</li>
+                            </lu>
+
+                        </div>
+                    </div>                      
 
                     </div>
                     <div class="w-full self-center mt-5 bg-white py-5 px-4 border-primary border-2 rounded-lg">
-                      <h1 class="text-center text-xl lg:text-start">Hasil analisis berdasarkan sistem kami : </h1>
+                      <h1 class="text-center text-xl lg:text-start">Curhatan kamu sebelumnya : </h1>
+                      <!-- kalau ada -->
                       <p class="text-center lg:text-start mt-2 text-gray-500"><span
                           class="font-bold text-blue-600">Kesedihan</span> anda diakibatkan karna menjauhnya orang
                         terdekat anda dari diri anda. Anda bisa mencoba melakukan hal yang anda suka agar perasaan sedih
                         anda hilang dan berganti fokus ke hal lain. <br><br>Cobalah untuk bercerita ke orang terdekat,
                         meski mereka hanya bisa mendengar, dan tidak dapat memberikan solusi, kami yakin itu dapat
                         membantu anda.</p>
+
+                      <!-- kalau belum ada -->
+                      <p class="text-center lg:text-start mt-2 text-gray-500">
+                        Kamu nggak perlu malu-malu untuk <span class="font-bold text-blue-600">Cerita</span> daripada dipendam sendiri terus, makin sesak lohh
+                      </p>
                     </div>
                   </div>
                 </div>

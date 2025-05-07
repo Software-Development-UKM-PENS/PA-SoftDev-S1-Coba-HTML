@@ -22,7 +22,7 @@
       <span class="hamburger-line transition duration-300 ease-in-out"></span>
       <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
     </button>
-    <div class="flex flex-no-wrap overflow-x-hidden">
+    <div class="flex flex-no-wrap h-screen overflow-x-hidden">
       <aside style="min-height: 716px" id="sidebar"
       class="w-64 fixed hidden bg-white shadow h-full sm:flex flex-col justify-between z-40">
         <div class="px-8 flex flex-col h-full justify-between">
@@ -76,41 +76,41 @@
                                 class="lg:w-20 lg:h-20 w-24 h-24 border-2 border-primary rounded-full self-center"
                                 alt="">
                         </div>
-                        <div class="block lg:ml-7 lg:mb-3 self-center">
-                            <h1
-                                class="text-3xl self-center justify-center  text-center lg:text-start font-normal">
-                                Hello!, <span class="text-primary font-semibold">Abim.</span>
-                            </h1>
-                            <p class="text-gray-500">Any story today?</p>
-                        </div>
+                        <div class="block lg:ml-7 lg:mb-3">
+                          <h1 class="text-3xl text-center lg:text-start font-normal">
+                              Hello!, <span class="text-primary font-semibold">Abim.</span>
+                          </h1>
+                          <p class="text-center lg:text-start text-gray-500">Any story today?</p>
+                        </div>                      
                     </div>
     
                     <!-- Mood Section -->
-                    <div class="mb-12">
-                        <h2 class="text-2xl font-bold text-purple-900 mb-6 text-center">How is your day?</h2>
-                        <div class="flex justify-center space-x-6">
-                            <div id="mood-buttons" class="flex gap-4 justify-center">
-                                <button data-mood="lol" class="mood-btn grayscale transition">
-                                  <img src="./dist/img/mood_icon/lol.png" alt="LOL" class="w-16 h-16">
-                                </button>
-                                <button data-mood="smile" class="mood-btn grayscale transition">
-                                  <img src="./dist/img/mood_icon/smile.png" alt="Smile" class="w-16 h-16">
-                                </button>
-                                <button data-mood="neutral" class="mood-btn grayscale transition">
-                                  <img src="./dist/img/mood_icon/neutral.png" alt="Neutral" class="w-16 h-16">
-                                </button>
-                                <button data-mood="thinking" class="mood-btn grayscale transition">
-                                  <img src="./dist/img/mood_icon/thinking.png" alt="Thinking" class="w-16 h-16">
-                                </button>
-                                <button data-mood="sad" class="mood-btn grayscale transition">
-                                    <img src="./dist/img/mood_icon/sad.png" alt="Thinking" class="w-16 h-16">
-                                </button>
-                                <button data-mood="angry" class="mood-btn grayscale transition">
-                                  <img src="./dist/img/mood_icon/angry.png" alt="Angry" class="w-16 h-16">
-                                </button>
-                            </div>
-                        </div>
+                    <div class="mb-12 mt-12">
+                      <h2 class="text-2xl font-bold text-purple-900 mb-6 text-center">How is your day?</h2>
+                      <div class="flex justify-center">
+                          <div id="mood-buttons" class="flex flex-wrap justify-center gap-4 w-full">
+                              <button data-mood="lol" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/lol.png" alt="LOL" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                              <button data-mood="smile" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/smile.png" alt="Smile" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                              <button data-mood="neutral" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/neutral.png" alt="Neutral" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                              <button data-mood="thinking" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/thinking.png" alt="Thinking" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                              <button data-mood="sad" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/sad.png" alt="Sad" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                              <button data-mood="angry" class="mood-btn grayscale transition">
+                                  <img src="./dist/img/mood_icon/angry.png" alt="Angry" class="w-16 h-16 sm:w-20 sm:h-20">
+                              </button>
+                          </div>
+                      </div>
                     </div>
+                  
     
                     <!-- Activities Section -->
                     <div class="mb-12">
@@ -119,75 +119,71 @@
                           <p class="text-gray-600">Select all the activities you did today</p>
                         </div>
                       
-                        <!-- Grid Baris 1 -->
-                        <div class="grid grid-cols-5 gap-6 mb-8">
-                          <div class="text-center">
+                        <div class="grid justify-center-s grid-cols-5 gap-6 mb-8">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/open-book.png" alt="Study" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Study</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/joystick.png" alt="Entertainment" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Entertainment</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/work-experience.png" alt="Work" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Work</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/training.png" alt="Sports" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Sports</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/diversity.png" alt="Social" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Social</span>
                           </div>
-                        </div>
-                      
-                        <!-- Grid Baris 2 -->
-                        <div class="grid grid-cols-5 gap-6">
-                          <div class="text-center">
+
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/eat.png" alt="Eat" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Eat</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/cooking.png" alt="Cooking" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Cooking</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/online-shopping.png" alt="Shopping" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Shopping</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/sleep.png" alt="Sleep" class="w-8 h-8">
                             </button>
                             <span class="text-sm">Sleep</span>
                           </div>
                       
-                          <div class="text-center">
+                          <div class="flex flex-col items-center w-full">
                             <button class="activity-btn bg-gray-200 grayscale rounded-full p-1 w-16 h-16 mx-auto flex items-center justify-center mb-2 transition">
                               <img src="./dist/img/activity_icon/religious.png" alt="Pray" class="w-8 h-8">
                             </button>
