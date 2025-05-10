@@ -212,6 +212,71 @@
                     
                 </section>
             </div>
+
+            <div class="w-full self-center justify-center rounded overflow-x-hidden">
+              <section class="lg:pt-24 pt-32 pb-24 ">
+                <div class="container mx-auto">
+                  <div class="flex flex-wrap">
+
+                    <div class="block mt-5">
+                      <div class="lg:flex w-full">
+                        <div
+                          class="w-full lg:h-full lg:w-2/6 mr-5 self-center mt-5 px-2 sm:px-0 bg-white py-5 border-primary border-2 rounded-lg">
+                          <div class="self-center justify-center py-8 lg:py-14">
+                            <h1 class="text-center text-7xl mb-6">😔</h1>
+                            <p class="text-center mb-2">Latest Emotion :</p>
+                            <p class="text-center font-bold text-5xl text-blue-600">Sad</p>
+                          </div>
+                        </div>
+                        <div class="block w-full">
+                          <div class="w-full self-center mt-5 bg-white py-5 px-4 border-primary border-2 rounded-lg">
+                            <h1 class="text-center text-xl lg:text-start mb-4">
+                              <span class="font-bold text-primary">Aktivitas</span> Anda Terakhir Kali :
+                            </h1>
+                          
+                            <ul class="flex flex-wrap justify-center gap-4 w-full">
+                              <li>Belajar</li>
+                              <li>Makan</li>
+                              <li>Hiburan</li>
+                              <li>Memasak</li>
+                              <li>Bekerja</li>
+                              <li>Berbelanja</li>
+                              <li>Sports</li>
+                              <li>Sleep</li>
+                              <li>Social</li>
+                              <li>Pray</li>
+                            </ul>
+                          </div>
+                          
+                          <div class="w-full self-center mt-5 bg-white py-5 px-4 border-primary border-2 rounded-lg">
+                            <h1 class="text-center text-xl lg:text-start">Curhatan kamu sebelumnya : </h1>
+                            <!-- kalau ada -->
+                            <p class="text-center lg:text-start mt-2 text-gray-500"><span
+                                class="font-bold text-blue-600">Kesedihan</span> anda diakibatkan karna menjauhnya orang
+                              terdekat anda dari diri anda. Anda bisa mencoba melakukan hal yang anda suka agar perasaan sedih
+                              anda hilang dan berganti fokus ke hal lain. <br><br>Cobalah untuk bercerita ke orang terdekat,
+                              meski mereka hanya bisa mendengar, dan tidak dapat memberikan solusi, kami yakin itu dapat
+                              membantu anda.</p>
+      
+                            <!-- kalau belum ada -->
+                            <p class="text-center lg:text-start mt-2 text-gray-500">
+                              Kamu nggak perlu malu-malu untuk <span class="font-bold text-blue-600">Cerita</span> daripada dipendam sendiri terus, makin sesak lohh
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <h1 class="font-semibold lg:text-xl mt-12 lg:mt-20 text-center  lg:text-start">Statistik Perkembangan
+                        Emosi Anda</h1>
+                      <div class="w-full self-center border-primary border-2 rounded-lg mt-7 py-5 ">
+                        <div class="max-w-sm w-full bg-white ">
+                          <div id="area-chart" class="w-full px-0 mt-9 "></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
         </div>
     </div>
 
@@ -253,5 +318,96 @@
             });
         });
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+  // ApexCharts options and config
+  window.addEventListener("load", function () {
+    let options = {
+      chart: {
+        width: '400%',
+        height: '100%',
+        type: "area",
+        fontFamily: "Inter, sans-serif",
+        dropShadow: {
+          enabled: false,
+        },
+        toolbar: {
+          show: false,
+        },
+      },
+      tooltip: {
+        enabled: true,
+        x: {
+          show: false,
+        },
+      },
+      fill: {
+        type: "gradient",
+        gradient: {
+          opacityFrom: 0.55,
+          opacityTo: 0,
+          shade: "#8566FF",
+          gradientToColors: ["#8566FF"],
+        },
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      stroke: {
+        width: 6,
+      },
+      grid: {
+        show: true,
+        strokeDashArray: 4,
+        padding: {
+          left: 2,
+          right: 2,
+          top: 0
+        },
+      },
+      series: [
+        {
+          name: "Emosi Anda",
+          data: [3000, 4000, 2000, 7000, 1000, 6456],
+          color: "#8566FF",
+        },
+      ],
+      xaxis: {
+        categories: ['01 February', '02 February', '03 February', '04 February', '05 February', '06 February', '07 February'],
+        labels: {
+          show: false,
+        },
+        axisBorder: {
+          show: false,
+        },
+        axisTicks: {
+          show: false,
+        },
+      },
+      yaxis: {
+        show: false,
+      },
+    }
+
+    if (document.getElementById("area-chart") && typeof ApexCharts !== 'undefined') {
+      const chart = new ApexCharts(document.getElementById("area-chart"), options);
+      chart.render();
+
+      // Mendeteksi ukuran layar saat halaman dimuat
+      const screenWidth = window.innerWidth;
+
+      // Ubah lebar grafik sesuai dengan ukuran layar
+      if (screenWidth <= 600) {
+        chart.updateOptions({
+          chart: {
+            width: "100%"
+          }
+        });
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
